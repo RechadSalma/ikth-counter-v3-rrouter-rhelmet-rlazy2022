@@ -13,6 +13,11 @@ app.get("/", function (req, res) {
     res.send(contentFromHtmlFile);
 });
 
+app.all("*", (req, res) => {
+    console.log("iK redirecting to / home page");
+    res.redirect("/");
+});
+
 /*create a http://localhost:3000 port*/
 app.listen(3000, function () {
     console.log("iK Application is running on http://localhost:3000/");
