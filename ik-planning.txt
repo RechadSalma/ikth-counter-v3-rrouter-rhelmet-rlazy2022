@@ -4,29 +4,28 @@
 - simple increment page, & second will be calculator structure (non-working calculator because it will take to long)
 
 *********************** LEFT OFF
--create three pages structure (react-router v6)
-	-trying to solve fallback page for other pathnames (or error page) on the webpack production mode (server.js)
-		-trying all app.use('*', () ... to see if it works, not working so far
+-I finish doing the logic increment page. But lighthouse performance is not that great, so I would like to look at this a little bit before moving on to react lazy loading
+
 *********************** DONE
 - setup webpack using my webpack template
 
-*********************** TODO
-- create three pages structure (react-router v6)
+- set up three pages structure (react-router v6)
 	- / index page for a simple increment functional component
 	- /side as a simple calculator (non-working) compoment
 	- /* error page
 	-create layout component with header & footer
-
-- add some simple css to both pages
+		-include links to test page not reload unneccessarily
 
 -implement react-helmet
 
-
 - do logic for the increment page
+*********************** TODO
 
+-Maybe test out react lazy loading components
 
+- add some simple css to both pages
 *********************** COMEBACK TO
--rename the app file to includereact-helmet
+-rename the app file to include react-helmet
 	-assuming react-helmet was install successfully
 
 

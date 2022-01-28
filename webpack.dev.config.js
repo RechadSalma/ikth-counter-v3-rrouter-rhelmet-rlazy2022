@@ -49,13 +49,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "development javascript webapck template",
+            // title: "development javascript webapck template",
             template: "src/index.hbs",
             meta: {
                 viewport: "width=device-width, initial-scale=1",
-                description: "iK SEO describe",
-                keywords:
-                    "iK SEO keywords, however it might not be necessary because it counts for little for google",
+                // description: "iK SEO describe",
+                // keywords:
+                //     "iK SEO keywords, however it might not be necessary because it counts for little for google",
             },
             publicPath: "/",
         }),
