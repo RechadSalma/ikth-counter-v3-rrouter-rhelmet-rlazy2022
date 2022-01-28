@@ -1,22 +1,31 @@
 20220127
 *********************** MISSION
-- version03: webpack / react / react-router 	iKskip = / workbox pwa / css css-grid
+- version03: webpack / react / react-router / react-helmet	iKskip = / workbox pwa / css css-grid
 - simple increment page, & second will be calculator structure (non-working calculator because it will take to long)
+
+*********************** LEFT OFF
+-I finish doing the logic increment page. But lighthouse performance is not that great, so I would like to look at this a little bit before moving on to react lazy loading
 
 *********************** DONE
 - setup webpack using my webpack template
 
-*********************** TODO
-- create three pages structure (react-router v6)
-	- index page for a simple increment functional component
-	- sidepage as a simple calculator (non-working) compoment
-	- error page
+- set up three pages structure (react-router v6)
+	- / index page for a simple increment functional component
+	- /side as a simple calculator (non-working) compoment
+	- /* error page
+	-create layout component with header & footer
+		-include links to test page not reload unneccessarily
 
-- add some simple css to both pages
+-implement react-helmet
 
 - do logic for the increment page
+*********************** TODO
 
+-Maybe test out react lazy loading components
 
-
+- add some simple css to both pages
+*********************** COMEBACK TO
+-rename the app file to include react-helmet
+	-assuming react-helmet was install successfully
 
 
