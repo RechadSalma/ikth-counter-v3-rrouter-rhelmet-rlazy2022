@@ -1,22 +1,33 @@
 20220127
 *********************** MISSION
-- version03: webpack / react / react-router 	iKskip = / workbox pwa / css css-grid
+- version03: webpack / react / react-router / react-helmet	iKskip = / workbox pwa / css css-grid
 - simple increment page, & second will be calculator structure (non-working calculator because it will take to long)
+
+*********************** NOTES
+
+*********************** LEFT OFF
 
 *********************** DONE
 - setup webpack using my webpack template
 
+- set up three pages structure (react-router v6)
+	- / index page for a simple increment functional component
+	- /side as a simple calculator (non-working) compoment
+	- /* error page
+	-create layout component with header & footer
+		-include links to test page not reload unneccessarily
+
+-implement react-helmet
+
+-do logic for the increment page
+
+-some simple css to along with bootstrap for the <IncrementComponent/> file
+
+-react lazy loading for the <IncrementComponent/>
+	-especially for imported bootstrap css file
 *********************** TODO
-- create three pages structure (react-router v6)
-	- index page for a simple increment functional component
-	- sidepage as a simple calculator (non-working) compoment
-	- error page
+- fix path routes for live server host (netlify) because only home page works, but others do not if you go directly to them without links
 
-- add some simple css to both pages
-
-- do logic for the increment page
-
-
-
+*********************** COMEBACK TO
 
 

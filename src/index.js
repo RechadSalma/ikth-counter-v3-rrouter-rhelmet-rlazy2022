@@ -1,61 +1,23 @@
-// import 'react-app-polyfill/ie11';
-// import 'normalize.css';
-// import './CSS/oikGrid.css';
-// import './index.css';
-import App from "./App";
+// import "normalize.css";
 import React from "react";
+import App from "./App";
 import ReactDOM from "react-dom";
-// import PropTypes from 'prop-types';
-// import { BrowserRouter, Route } from 'react-router-dom';
-// import { createStore, applyMiddleware, compose } from 'redux';
-// import { Provider, connect, ReactReduxContext } from 'react-redux';
-// import ReduxThunk from 'redux-thunk';
-// import axios from 'axios';
-// import DOMPurify from 'dompurify';
+import { BrowserRouter } from "react-router-dom";
 
 /*To listen to any unhandled promise rejections (no catch handler?)
 +\ you probably remove it afterwards if you think you do not need it. */
 window.addEventListener("unhandledrejection", function (event) {
-    console.warn(event.promise);
-    console.warn(event.reason);
+    console.warn("iK ", event.promise);
+    console.warn("iK ", event.reason);
 });
 
 /*iK React with not redux store */
 /*IK you could set up react context api if needed */
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById("root")
 ); /*END ReactDOM.render() */
-
-/*iK using React-Redux */
-// import kStore1 from './Redux-State/Redux-Store/kStore.js';
-
-// ReactDOM.render(
-//     <React.StrictMode>
-//         <Provider store={kStore1}>
-//             <App />
-//         </Provider>
-//     </React.StrictMode>,
-//     document.getElementById('root')
-// ); /*END ReactDOM.render() */
-
-// import iKh1 from './components/iKh1.js';
-// import iKimg from './components/iKimg.js';
-
-// const iKindexjs = () => {
-// 	const iKdiv = document.createElement('div');
-
-// 	iKdiv.textContent = 'iK from iKindexjs';
-
-// 	iKdiv.style.border = 'red 3px solid';
-
-// 	return iKdiv;
-// }; /*END iKindexjs */
-
-// const iKbody = document.getElementsByTagName('body')[0];
-
-// iKbody.appendChild(iKindexjs());
-// iKbody.appendChild(iKh1());
-// iKbody.appendChild(iKimg());
