@@ -2,7 +2,7 @@
 
 ---
 
-### Status: _completed most of what I wanted to do. However on live server host (Netlify), only the home page works (other path pages works too but only if you link to them through the home page), the other path pages do not work directly without be linked forward too_
+### Status: \_completed most of what I wanted to do. Not fancy at all but quite please with it as I learn a lot
 
 ##### 20220129
 
@@ -10,7 +10,9 @@
     -   / = which is the increment page which you can increment/decrement the displayed number
     -   /side = just some plain text
     -   /\* = error page
+    -   VIP Manage to get all of react router url paths to work with netlify. Had to add **\_redirects** file to the root of dist. Which than allows all the routes to work as suppose to
 -   SEO for each page using react-helmet
+    -   However still not ideal because I had to use **robots.txt** file to ensure the SEO is being read properly
 -   react lazy loading the \<IncrementComponent> which contains teh huge bootstrap css file too
     -   It is the only component that is using bootstrap. So first paint was help a lot
 
