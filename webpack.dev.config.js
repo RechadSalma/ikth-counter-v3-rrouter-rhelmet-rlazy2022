@@ -8,7 +8,8 @@ module.exports = {
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
-        clean: { keep: /iKmanifestDir/ },
+        clean: false,
+        // { keep: /iKmanifestDir/ },
     },
     mode: "development",
     devtool: "inline-source-map",

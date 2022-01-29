@@ -8,7 +8,8 @@ module.exports = {
     output: {
         filename: "bundle.[contenthash].js",
         path: path.resolve(__dirname, "dist"),
-        clean: { keep: /iKmanifestDir/ },
+        clean: false,
+        // { keep: /iKmanifestDir/ },
     },
     mode: "production",
     optimization: {

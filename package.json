@@ -5,10 +5,10 @@
     "private": true,
     "scripts": {
         "ikupdate": "npm i && npm update && npm audit fix --force",
-        "build": "rm -rfv ./dist && webpack --config webpack.production.config.js",
-        "ikbuild": "rm -rfv ./dist && webpack --config webpack.production.config.js && cp -rv ./src/iKmanifestDir ./dist/",
+        "build": "rm -rfv ./dist && mkdir dist && cp -rv ./src/iKmanifestDir/ ./dist/ && webpack --config webpack.production.config.js",
+        "ikbuild": "rm -rfv ./dist && mkdir dist && cp -rv ./src/iKmanifestDir/ ./dist/ && webpack --config webpack.production.config.js",
         "prod": "npm run build && node src/server.js",
-        "dev": "rm -rfv ./dist && mkdir dist && cp -rv ./src/iKmanifestDir ./dist && webpack serve --config webpack.dev.config.js --hot",
+        "dev": "rm -rfv ./dist && mkdir dist && cp -rv ./src/iKmanifestDir/ ./dist && webpack serve --config webpack.dev.config.js --hot",
         "lint": "eslint ."
     },
     "keywords": [],
