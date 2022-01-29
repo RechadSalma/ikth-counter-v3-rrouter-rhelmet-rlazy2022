@@ -9,12 +9,12 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>HOME - rh</title>
                 <meta
                     name="description"
                     content="/ iK meta description working"
                 />
                 <meta name="keyword" content="HOME meta keyword working" />
+                <title>HOME - rh</title>
             </Helmet>
             <>
                 <h1>iK I am Home page</h1>;
