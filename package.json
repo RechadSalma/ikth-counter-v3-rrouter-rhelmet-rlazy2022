@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
         "ikupdate": "npm i && npm update && npm audit fix --force",
-        "build": "rm -rfv ./dist && mkdir dist && cp -rv ./src/iKmanifestDir/ ./dist/ && webpack --config webpack.production.config.js",
+        "build": "rm -rfv ./dist && mkdir dist && cp -rv ./src/_redirects ./dist/ && cp -rv ./src/iKmanifestDir/ ./dist/ && webpack --config webpack.production.config.js",
         "ikbuild": "rm -rfv ./dist && mkdir dist && cp -rv ./src/iKmanifestDir/ ./dist/ && webpack --config webpack.production.config.js",
         "prod": "npm run build && node src/server.js",
         "dev": "rm -rfv ./dist && mkdir dist && cp -rv ./src/iKmanifestDir/ ./dist && webpack serve --config webpack.dev.config.js --hot",
