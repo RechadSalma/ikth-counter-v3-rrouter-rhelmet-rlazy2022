@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Helmet } from "react-helmet";
 
-import IncrementComponent from "../components/IncrementComponent.js";
+const IncrementComponent = lazy(() =>
+    import("../components/IncrementComponent.js")
+);
 
 const Home = () => {
     return (
@@ -16,7 +18,9 @@ const Home = () => {
             </Helmet>
             <>
                 <h1>iK I am Home page</h1>;
-                <IncrementComponent />
+                <Suspense fallback={<h1>.LAZY LOADING with reactjs...</h1>}>
+                    <IncrementComponent />
+                </Suspense>
             </>
         </>
     );
